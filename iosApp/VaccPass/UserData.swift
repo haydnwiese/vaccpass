@@ -17,8 +17,8 @@ struct PropertyKey {
     static let vaccinationState = "vaccinationState";
     static let bookings = "bookings";
 }
-let singleUser = UserData()
 class UserData: NSObject, NSCoding {
+    static let sharedInstance = UserData();
     var userName: String;
     var email: String;
     var age: Int;
@@ -29,27 +29,34 @@ class UserData: NSObject, NSCoding {
     var bookings: Array<Any>;
     
     override init() {
-        super.init();
-        self.userName = "";
-        self.email = "";
-        self.age = 0;
-        self.userID = "";
-        self.healthCardNum = "";
-        self.address = "";
-        self.vaccinationState = "";
-        self.bookings = [];
+        userName = "";
+        email = "";
+        age = 0;
+        userID = "";
+        healthCardNum = "";
+        address = "";
+        vaccinationState = "";
+        bookings = [];
     }
     func encode(with coder: NSCoder) {
-        coder.encode(self.userName, forKey: PropertyKey.userName);
-        coder.encode(self.email, forKey: PropertyKey.email);
-        coder.encode(self.age, forKey: PropertyKey.age);
-        coder.encode(self.userID, forKey: PropertyKey.userID);
-        coder.encode(self.healthCardNum, forKey: PropertyKey.healthCardNum);
-        coder.encode(self.vaccinationState, forKey: PropertyKey.vaccinationState);
-        coder.encode(self.bookings, forKey: PropertyKey.bookings);
+        coder.encode(userName, forKey: PropertyKey.userName);
+        coder.encode(email, forKey: PropertyKey.email);
+        coder.encode(age, forKey: PropertyKey.age);
+        coder.encode(userID, forKey: PropertyKey.userID);
+        coder.encode(healthCardNum, forKey: PropertyKey.healthCardNum);
+        coder.encode(vaccinationState, forKey: PropertyKey.vaccinationState);
+        coder.encode(bookings, forKey: PropertyKey.bookings);
     }
     
     required init?(coder: NSCoder) {
+        userName = coder.decodeObject(forKey: PropertyKey.userName) as! String;
+        email = coder.decodeObject(forKey: PropertyKey.email) as! String;
+        age = coder.decodeInteger(forKey: PropertyKey.age);
+        userID = coder.decodeObject(forKey: PropertyKey.userID) as! String;
+        healthCardNum = coder.decodeObject(forKey: PropertyKey.healthCardNum) as! String;
+        address = coder.decodeObject(forKey: PropertyKey.address) as! String;
+        vaccinationState = coder.decodeObject(forKey: PropertyKey.vaccinationState) as! String;
+        bookings = coder.decodeObject(forKey: PropertyKey.bookings) as! Array<Any>;
     }
     
     

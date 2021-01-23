@@ -9,9 +9,17 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    
+    @IBOutlet weak var myText: UITextField!
+    @IBOutlet weak var myButton: UIButton!
 
+    @IBAction func goNext(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        myText.text = "hello"
+        myButton.setTitle("hello", for: UIControl.State.focused)
 
         // Do any additional setup after loading the view.
     }
