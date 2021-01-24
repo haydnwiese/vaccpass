@@ -22,6 +22,7 @@ router.post('/book/:userid', async (req, res) => {
         const userData = await usersModel.fetchUserDataById(userId);
         userData.bookings = bookings;
         const result = await usersModel.updateUser(userData, userId);
+        // TODO add booking to location
         res.status(200).send(result);
     } catch(error) {
         res.status(500).send(error);
