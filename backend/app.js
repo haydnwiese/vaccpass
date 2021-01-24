@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 // routing setup
 app.use('/users', users);
-app.use('/booking',bookings);
+app.use('/bookings',bookings);
 
 app.listen(PORT, () => {
     console.log(`server started at http://localhost:${PORT}`);
