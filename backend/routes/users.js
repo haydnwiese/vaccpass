@@ -3,8 +3,6 @@ const router = express.Router();
 const VACCINATION_STATE = require('../util/constants').VACCINATION_STATE;
 const usersModel = require('../models/users');
 
-const userCollection = 'users';
-
 router.get('/', async (req, res) => {
     try {
         const users = await usersModel.fetchUserData();
@@ -34,7 +32,7 @@ router.post('/register', async (req, res) => {
         if (!isRegisterBodyValid(body)) throw Error('Invalid request body');
 
         const userObject = buildUserObject(body);
-        
+
         const userId = await usersModel.registerUser(userObject);
         if (userId) {
             res.status(200).send({userId});

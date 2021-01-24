@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-var serviceAccount = require('./vaccpass-backend-594715073047.json');
+var serviceAccount = require('../vaccpass-backend-594715073047.json');
 
 var _db;
 
