@@ -9,22 +9,36 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    @IBOutlet weak var promptLabel: UILabel!
+    @IBOutlet weak var fullNameTextField: UITextField!
+    @IBOutlet weak var dateOfBirthField: UITextField!
+    let datePicker = UIDatePicker()
     
-    @IBOutlet weak var myText: UITextField!
-    @IBOutlet weak var myButton: UIButton!
-
-    @IBAction func goNext(_ sender: Any) {
-        
-    }
+    @IBOutlet weak var healthcardField: UITextField!
+    
+    @IBOutlet weak var addressField: UITextField!
+    
+    @IBOutlet weak var emailField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        myText.text = "hello"
-        myButton.setTitle("hello", for: UIControl.State.focused)
-
-        // Do any additional setup after loading the view.
+        navigationController?.setNavigationBarHidden(false, animated: false);
+        datePicker.datePickerMode = UIDatePicker.Mode.date;
+        dateOfBirthField.inputView = datePicker;
+        navigationController?.navigationBar.prefersLargeTitles = true;
+        datePicker.addTarget(self, action: #selector(self.handleDatePicker), for: UIControl.Event.valueChanged);
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.signUp) )        // Do any additional setup after loading the view.
+    }
+   @objc func handleDatePicker() {
+        
+        dateOfBirthField.text =  DateFormatter.localizedString(from: datePicker.date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.none)
+    
+    }
+    @objc func signUp() {
+        self.performSegue(withIdentifier: "goToFirstBooking", sender: self)
+        // network fucntion here
+        
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -34,5 +48,6 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
 }

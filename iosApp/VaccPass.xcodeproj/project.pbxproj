@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,13 +13,17 @@
 		6D0B96E925BBEC090094196F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B96E825BBEC090094196F /* ContentView.swift */; };
 		6D0B96EB25BBEC0B0094196F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0B96EA25BBEC0B0094196F /* Assets.xcassets */; };
 		6D0B96EE25BBEC0B0094196F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0B96ED25BBEC0B0094196F /* Preview Assets.xcassets */; };
-		6D0B96F125BBEC0B0094196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0B96EF25BBEC0B0094196F /* LaunchScreen.storyboard */; };
 		6D0B96F925BBEC5D0094196F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B96F825BBEC5D0094196F /* RegisterViewController.swift */; };
-		6D0B96FB25BBEC6B0094196F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0B96FA25BBEC6B0094196F /* Storyboard.storyboard */; };
+		6D0B96FB25BBEC6B0094196F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0B96FA25BBEC6B0094196F /* Main.storyboard */; };
 		6D0B96FD25BBEFB00094196F /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B96FC25BBEFB00094196F /* UserData.swift */; };
-		6D0B96FF25BBFC6E0094196F /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0B96FE25BBFC6E0094196F /* Onboarding.storyboard */; };
 		6D59B8B725BC7F4A0066DDFD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59B8B625BC7F4A0066DDFD /* NetworkManager.swift */; };
 		6D59B8BA25BC8A8F0066DDFD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6D59B8B925BC8A8F0066DDFD /* Podfile */; };
+		6D59B8BC25BCAEEE0066DDFD /* ModeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59B8BB25BCAEEE0066DDFD /* ModeSelectionViewController.swift */; };
+		6D921D2925BCB753001D8E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D921D2725BCB753001D8E2B /* LaunchScreen.storyboard */; };
+		6D921D3125BCFD7B001D8E2B /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D921D3025BCFD7B001D8E2B /* ScannerViewController.swift */; };
+		6DF09EAD25BD258D000A44D8 /* BookingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF09EAC25BD258D000A44D8 /* BookingOneViewController.swift */; };
+		6DF09EB125BD29F5000A44D8 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF09EB025BD29F5000A44D8 /* BookingTableViewCell.swift */; };
+		6DF09EB425BD3301000A44D8 /* TopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF09EB325BD3301000A44D8 /* TopTableViewCell.swift */; };
 		EFC9C9B1DCEFB8A1A0E2D381 /* Pods_VaccPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A664A959AA04CCBEA8185A2B /* Pods_VaccPass.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,14 +35,18 @@
 		6D0B96E825BBEC090094196F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D0B96EA25BBEC0B0094196F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D0B96ED25BBEC0B0094196F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6D0B96F025BBEC0B0094196F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D0B96F225BBEC0B0094196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0B96F825BBEC5D0094196F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		6D0B96FA25BBEC6B0094196F /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		6D0B96FA25BBEC6B0094196F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6D0B96FC25BBEFB00094196F /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		6D0B96FE25BBFC6E0094196F /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		6D59B8B625BC7F4A0066DDFD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6D59B8B925BC8A8F0066DDFD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		6D59B8BB25BCAEEE0066DDFD /* ModeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelectionViewController.swift; sourceTree = "<group>"; };
+		6D921D2825BCB753001D8E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D921D3025BCFD7B001D8E2B /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		6DF09EAC25BD258D000A44D8 /* BookingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingOneViewController.swift; sourceTree = "<group>"; };
+		6DF09EB025BD29F5000A44D8 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		6DF09EB325BD3301000A44D8 /* TopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTableViewCell.swift; sourceTree = "<group>"; };
 		A664A959AA04CCBEA8185A2B /* Pods_VaccPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaccPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D103F6425A4C243D511AA49B /* Pods-VaccPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaccPass.debug.xcconfig"; path = "Target Support Files/Pods-VaccPass/Pods-VaccPass.debug.xcconfig"; sourceTree = "<group>"; };
 		F1916D34D5B1799D81D546CF /* Pods-VaccPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaccPass.release.xcconfig"; path = "Target Support Files/Pods-VaccPass/Pods-VaccPass.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,14 +98,18 @@
 				6D0B96E125BBEC090094196F /* AppDelegate.swift */,
 				6D0B96E325BBEC090094196F /* SceneDelegate.swift */,
 				6D0B96FC25BBEFB00094196F /* UserData.swift */,
-				6D0B96FE25BBFC6E0094196F /* Onboarding.storyboard */,
 				6D0B96E825BBEC090094196F /* ContentView.swift */,
 				6D0B96EA25BBEC0B0094196F /* Assets.xcassets */,
-				6D0B96EF25BBEC0B0094196F /* LaunchScreen.storyboard */,
 				6D0B96F825BBEC5D0094196F /* RegisterViewController.swift */,
-				6D0B96FA25BBEC6B0094196F /* Storyboard.storyboard */,
+				6D0B96FA25BBEC6B0094196F /* Main.storyboard */,
+				6DF09EB325BD3301000A44D8 /* TopTableViewCell.swift */,
+				6DF09EB025BD29F5000A44D8 /* BookingTableViewCell.swift */,
+				6DF09EAC25BD258D000A44D8 /* BookingOneViewController.swift */,
+				6D921D2725BCB753001D8E2B /* LaunchScreen.storyboard */,
+				6D59B8BB25BCAEEE0066DDFD /* ModeSelectionViewController.swift */,
 				6D0B96F225BBEC0B0094196F /* Info.plist */,
 				6D0B96E525BBEC090094196F /* VaccPass.xcdatamodeld */,
+				6D921D3025BCFD7B001D8E2B /* ScannerViewController.swift */,
 				6D0B96EC25BBEC0B0094196F /* Preview Content */,
 			);
 			path = VaccPass;
@@ -125,7 +137,6 @@
 				D103F6425A4C243D511AA49B /* Pods-VaccPass.debug.xcconfig */,
 				F1916D34D5B1799D81D546CF /* Pods-VaccPass.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,10 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D59B8BA25BC8A8F0066DDFD /* Podfile in Resources */,
-				6D0B96F125BBEC0B0094196F /* LaunchScreen.storyboard in Resources */,
-				6D0B96FF25BBFC6E0094196F /* Onboarding.storyboard in Resources */,
-				6D0B96FB25BBEC6B0094196F /* Storyboard.storyboard in Resources */,
+				6D0B96FB25BBEC6B0094196F /* Main.storyboard in Resources */,
 				6D0B96EE25BBEC0B0094196F /* Preview Assets.xcassets in Resources */,
+				6D921D2925BCB753001D8E2B /* LaunchScreen.storyboard in Resources */,
 				6D0B96EB25BBEC0B0094196F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,21 +259,26 @@
 			files = (
 				6D0B96FD25BBEFB00094196F /* UserData.swift in Sources */,
 				6D0B96E225BBEC090094196F /* AppDelegate.swift in Sources */,
+				6D921D3125BCFD7B001D8E2B /* ScannerViewController.swift in Sources */,
+				6DF09EB125BD29F5000A44D8 /* BookingTableViewCell.swift in Sources */,
+				6D59B8BC25BCAEEE0066DDFD /* ModeSelectionViewController.swift in Sources */,
 				6D0B96F925BBEC5D0094196F /* RegisterViewController.swift in Sources */,
 				6D59B8B725BC7F4A0066DDFD /* NetworkManager.swift in Sources */,
 				6D0B96E425BBEC090094196F /* SceneDelegate.swift in Sources */,
+				6DF09EAD25BD258D000A44D8 /* BookingOneViewController.swift in Sources */,
 				6D0B96E925BBEC090094196F /* ContentView.swift in Sources */,
 				6D0B96E725BBEC090094196F /* VaccPass.xcdatamodeld in Sources */,
+				6DF09EB425BD3301000A44D8 /* TopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6D0B96EF25BBEC0B0094196F /* LaunchScreen.storyboard */ = {
+		6D921D2725BCB753001D8E2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6D0B96F025BBEC0B0094196F /* Base */,
+				6D921D2825BCB753001D8E2B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

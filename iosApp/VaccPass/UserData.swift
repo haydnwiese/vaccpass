@@ -17,6 +17,10 @@ struct PropertyKey {
     static let vaccinationState = "vaccinationState";
     static let bookings = "bookings";
 }
+struct Booking {
+    let date: NSDate;
+    let location: String;
+}
 class UserData: NSObject, NSCoding {
     static let sharedInstance = UserData();
     var userName: String;
@@ -26,7 +30,7 @@ class UserData: NSObject, NSCoding {
     var healthCardNum: String;
     var address: String;
     var vaccinationState: String;
-    var bookings: Array<Any>;
+    var bookings: Array<Booking>;
     
     override init() {
         userName = "";
@@ -56,7 +60,7 @@ class UserData: NSObject, NSCoding {
         healthCardNum = coder.decodeObject(forKey: PropertyKey.healthCardNum) as! String;
         address = coder.decodeObject(forKey: PropertyKey.address) as! String;
         vaccinationState = coder.decodeObject(forKey: PropertyKey.vaccinationState) as! String;
-        bookings = coder.decodeObject(forKey: PropertyKey.bookings) as! Array<Any>;
+        bookings = coder.decodeObject(forKey: PropertyKey.bookings) as! Array<Booking>;
     }
     
     

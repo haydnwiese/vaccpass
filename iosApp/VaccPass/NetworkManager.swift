@@ -32,7 +32,7 @@ class NetworkManager {
     init() {
     }
     
-    func registerUser(registrationData: registerUser) {
+    func registerUser(registrationData: registerUser, completltionHandler:(_ success:Bool) -> Void) {
         guard let url = URL(string: "url") else {return};
         AF.request(url, method: .post, parameters: registrationData, encoder: JSONParameterEncoder.default).response{
             response in debugPrint(response)
