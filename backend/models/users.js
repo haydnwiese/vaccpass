@@ -34,7 +34,7 @@ async function registerUser(userData) {
 
 async function updateUser(userData, userId) {
     const documentReference = firestoreUtil.getDb().collection('users').doc(userId);
-    const response = await documentReference.set(userData);
+    const response = await documentReference.update(userData);
     return response.writeTime ? true : false;
 }
 

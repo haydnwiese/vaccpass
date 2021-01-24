@@ -10,8 +10,9 @@ async function updateUserVaccinationStatus(userId) {
     const currentVaccinationState = userData.vaccination_state;
     const newStateIndex = Object.keys(VACCINATION_STATE).indexOf(currentVaccinationState) + 1;
     userData.vaccination_state = VACCINATION_STATE[Object.keys(VACCINATION_STATE)[newStateIndex]];
-    
-    return await usersModel.updateUser(userData, userId);
+    const update = {vaccination_state: userData.vaccination_state};
+    return await usersModel.updateUser(update, userId);
 }
+
 
 module.exports = {updateUserVaccinationStatus};
