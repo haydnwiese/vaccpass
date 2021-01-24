@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vaccpass-backend",
+  "private_key_id": "5947150730479f7f27d8e1af5a9eed8431eea98b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDYwHL+mQVtGa9P\nBNaWQYh/E0ZuJJqtyY2wEZqPhgGLU9+3MPlsZH8EaZmowBoICRh+SHL56l/xD65g\np1TJsCRnmjaK/0dAI9a36aI5AAjLlGsIdNFCIjlL84mFa5+hosozBnmMOIEvGtaA\nGyi2c4svGH5R55HUZcnI5UeD0qrRMzVEs9d2JpMTSRcB/JQoDRGALCdq4sgIWBAR\ngeCWPMGLSuzO9UZM0NaiXmk7lFgOyJt5OC4I8CGhauqZu0Nmht4L+gCBresFhYih\ng3FYk9hGE03zzmMODSc+zctY7fFgmkzQlAFXsyzReMeNjGZziga3H/mKbboHxMLu\n96HmqqZBAgMBAAECggEABIfxX3UfceppicNWIQn5qn5iqIbHXP6roZScoIdynNEC\nCjhR3nwzU4pJlgd+A9D83BbzoFnP66AiSw70bMrr1+aXYUx41tRo9qtBouNnS6os\nmp6miTVh8T6ED2/yhFR82Zg3DkFYIf3zofXvYfEEZdWjPl8S41fFYhe46P6MZ5ca\nl247/MD/GKI4XWwzytVDNkSj6Grcc5KhwRRHncRioHxr/331J1sK/P9kXVEfkA8X\no8rIvoCGzOILn0A92H7N7i/f2b6HV+y79982FFKNOIVVDQa7ZdbRU2HGXuIqRGtF\nczChnciJdLnmfQi+5UOyPLjiF1Vit265yXG4sReJgQKBgQD38IDLh9EuV9xSXFtZ\nBYMYjQP20aCEQxtkdqvwLwmst7UVqCokItUcuOJd9k5a8esY+bkLwI9l675ipUAr\nBOW37DvPI+MRljPUW86Dxh/FH46BCb67WMzJwgRQNHo8mPDXMRKIJCFVMvnWWS/s\nM7ZQ/cz5veUdeUaRXhSfzC45SQKBgQDfzGI+kpZzALD5CO8cq39/847uQIr6cJLA\nllg9Aeugb5r7azFprGAxfucMQmEbKdK6ZCK5Zml1j2Vt7QgoUFEXvL4vkatA3ww2\nNulCHtrvEputdGEMIfbl2+FyDM6t8ZropLkB6AyQv+ChbU9pDmKQpa5oxkczYz7O\nf2nljG29OQKBgQDsg6MJBI157NxCQNHu8MAmylYuu7eok69svXu1Cdnrxe7bMujI\nQeYTmRZvVcdXIBEJaSapXE4uhpy90y+MGgbc1WAUcAJqw2K7v7wXngaubzTsSRSF\n+OaZzBd7PyQf7DFKxggMkJKviIolfDyn0IipaAKBdjE6VXcIsrtv2EF76QKBgCjC\ncKI00HHhjlnM5r+x/GaxVTbPSoCSQCgTOb7iuqddrDxeKYG1g0+AbVQuQsFPvLF1\ny1046bwfgbmjkfjFp/9KwNipDyehd/fnyFPiir1ABlpw97vd87mpckXzTzEe77ev\nSIKwYJl8WM0Nu4jGteziQAGVGyKg0K+LRR4plVMBAoGAanMQ/P/IFk8Kt6nKUBH2\nYhv5FBlgMUWVc3Sr2Ram2TyI/SA8rYNLaHVsUfeBpOisWbc98PegySc8KDCOfJUl\nV1m43WFl6gvEq0rEJlT2wLXKKQq1ypWkgMSgLUZAH8vSxNC1Fiu87iQaqNRxCoIg\nj1S+48KCsbkrgmAVYiLrST4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vaccpass-backend@appspot.gserviceaccount.com",
+  "client_id": "104127172936980257995",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vaccpass-backend%40appspot.gserviceaccount.com"
+}
