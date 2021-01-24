@@ -1,4 +1,4 @@
-const firestoreUtil = require('../firestoreUtil');
+const firestoreUtil = require('../util/firestoreUtil');
 
 const userCollection = 'users';
 
@@ -32,4 +32,10 @@ async function registerUser(userData) {
     }
 }
 
-module.exports = {fetchUserData, fetchUserDataById, registerUser};
+async function updateUser(userData, userId) {
+    const documentReference = firestoreUtil.getDb().collection('users').doc(userId);
+    const response = await documentReference.set(userData);
+    return response.writeTime ? true : false;
+}
+
+module.exports = {fetchUserData, fetchUserDataById, registerUser, updateUser};

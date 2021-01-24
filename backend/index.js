@@ -8,7 +8,7 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-postData();
+// postData();
 // const str = 'users/haydn';
 // console.log(str.substr(str.lastIndexOf('/') + 1))
 
