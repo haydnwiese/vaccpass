@@ -1,19 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const VACCINATION_STATE = require('../util/constants').VACCINATION_STATE;
+const usersModel = require('../models/users');
 
 const userCollection = 'users';
 
 router.get('/', async (req, res) => {
     try {
-        const userQuerySnapshot = await req.app.get('db').collection(userCollection).get()
-        const users = [];
-        userQuerySnapshot.forEach(doc => {
-            users.push({
-                id: doc.id,
-                data: doc.data()
-            })
-        });
+        const users = await usersModel.fetchUserData();
         res.status(200).json(users);
     } catch (error) {
         res.status(500).send(error);
@@ -22,10 +16,9 @@ router.get('/', async (req, res) => {
 
 router.get('/:userid', async (req, res) => {
     try {
-        const userRef = req.app.get('db').collection(userCollection).doc(req.params.userid);
-        const doc = await userRef.get();
-        if (doc.exists && doc.data()) {
-            res.status(200).json(doc.data());
+        const data = await usersModel.fetchUserDataById(req.params.userid);
+        if (data) {
+            res.status(200).json(data);
         } else {
             throw Error('No such user');
         }
@@ -41,12 +34,9 @@ router.post('/register', async (req, res) => {
         if (!isRegisterBodyValid(body)) throw Error('Invalid request body');
 
         const userObject = buildUserObject(body);
-
-        const documentReference = req.app.get('db').collection('users').doc();
-        const response = await documentReference.set(userObject);
-        if (response.writeTime) {
-            const path = documentReference.path;
-            const userId = path.substr(path.lastIndexOf('/') + 1);
+        
+        const userId = await usersModel.registerUser(userObject);
+        if (userId) {
             res.status(200).send({userId});
         } else {
             throw Error('Something went wrong');
